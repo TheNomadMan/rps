@@ -18,17 +18,17 @@ while True:
     if computer_pick == user_choice:
         print("Its a tie!")
     elif computer_pick == "rock" and user_choice == "scissors":
-        print("Rock beats Scissors: you lose.")
+        print("Rock beats Scissors: you lost.")
     elif computer_pick == "scissors" and user_choice == "paper":
-        print("Scissors beats Paper: you lose.")
+        print("Scissors beats Paper: you lost.")
     elif computer_pick == "paper" and user_choice == "rock":
-        print("Paper beats Rock: you lose.")
+        print("Paper beats Rock: you lost.")
     elif user_choice == "rock" and computer_pick == "scissors":
-        print("Rock beats Scissors: you win!")
+        print("Rock beats Scissors: YOU WON!")
     elif user_choice == "scissors" and computer_pick == "paper":
-        print("Scissors beats Paper: you win!")
+        print("Scissors beats Paper: YOU WON!")
     elif user_choice == "paper" and computer_pick == "rock":
-        print("Paper beats Rock: you win!")
+        print("Paper beats Rock: YOU WON!")
     else:
         print("Something went wrong")
     print()
