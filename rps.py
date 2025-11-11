@@ -37,6 +37,7 @@ while True:
         play_again = str(input("'Yes' or 'No'\n")).lower()
         if play_again in play_again_options:
             if play_again == "no":
+                print()
                 print("Goodbye!")
                 break
             elif play_again == "yes":
