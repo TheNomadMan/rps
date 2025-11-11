@@ -6,8 +6,7 @@ while True:
     while True:
         user_choice = str(input("'Rock', 'Paper', or 'Scissors'?\n")).lower()
         if user_choice in valid_choices:
-            print()
-            print("You picked:", user_choice.capitalize())
+            print("\nYou picked:", user_choice.capitalize())
             break
         else:
             print("That's not a valid choice, try again")
@@ -37,15 +36,12 @@ while True:
         play_again = str(input("'Yes' or 'No'\n")).lower()
         if play_again in play_again_options:
             if play_again == "no":
-                print()
-                print("Goodbye!")
+                print("\nGoodbye!")
                 break
             elif play_again == "yes":
-                print()
-                print("Yay!\n")
+                print("\nYay!\n")
                 break
         else:
-            print()
-            print("Huh?\n")
+            print("\nHuh?\n")
     if play_again == "no":
         break
