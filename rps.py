@@ -1,0 +1,47 @@
+import random
+valid_choices = ['rock', 'paper', 'scissors']
+play_again_options = ['yes', 'no']
+while True:
+
+    while True:
+        user_choice = str(input("'Rock', 'Paper', or 'Scissors'?\n")).lower()
+        if user_choice in valid_choices:
+            print("You picked:", user_choice)
+            break
+        else:
+            print("That's not a valid choice, try again")
+
+    computer_pick = random.choice(valid_choices)
+    print("The computer chose:", computer_pick)
+
+    if computer_pick == user_choice:
+        print("Its a tie!")
+    elif computer_pick == "rock" and user_choice == "scissors":
+        print("Rock beats Scissors, you lose")
+    elif computer_pick == "scissors" and user_choice == "paper":
+        print("Scissors beats Paper, you lose")
+    elif computer_pick == "paper" and user_choice == "rock":
+        print("Paper beats Rock, you lose")
+    elif user_choice == "rock" and computer_pick == "scissors":
+        print("Rock beats Scissors, you win!")
+    elif user_choice == "scissors" and computer_pick == "paper":
+        print("Scissors beats Paper, you win!")
+    elif user_choice == "paper" and computer_pick == "rock":
+        print("Paper beats Rock, you win!")
+    else:
+        print("Something went wrong")
+
+    while True:
+        print("Would you like to play again?")
+        play_again = str(input("'Yes' or 'No'\n")).lower()
+        if play_again in play_again_options:
+            if play_again == "no":
+                print("Goodbye!")
+                break
+            elif play_again == "yes":
+                print("Yay!")
+                break
+        else:
+            print("Huh?")
+    if play_again == "no":
+        break
